@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bedrock Data - San Jose Cybersecurity Dinner Brief - November 2026</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="hdr">
+  <div>
+    <div class="htitle">Bedrock Data - San Jose Cybersecurity Dinner Brief</div>
+    <div class="hsub">November 18, 2026 · San Jose · 25 attendees · Confidential</div>
+  </div>
+</div>
+
+<div id="fbar" class="fbar">
+  <button class="fb on" onclick="applyFilter('all',this)">All<span class="cnt">25</span></button>
+  <button class="fb"    onclick="applyFilter('src',this)">Sourced by Bedrock<span class="cnt">5</span></button>
+  <button class="fb"    onclick="applyFilter('ae',this)">Has AE<span class="cnt">15</span></button>
+</div>
+
+<div id="ov">
+  <div class="grid" id="og"></div>
+</div>
+
+<div id="dv">
+  <div class="dnav">
+    <button class="bb" onclick="window.location.href='index.html'">&#8962; Back to Home</button>
+    <span class="npos" id="np"></span>
+    <div class="narr">
+      <button class="na" onclick="navigate(-1)">&#8249;</button>
+      <button class="na" onclick="navigate(1)">&#8250;</button>
+    </div>
+  </div>
+  <div class="db" id="db"></div>
+  <div class="dots" id="dd"></div>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
